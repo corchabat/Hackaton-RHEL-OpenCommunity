@@ -80,6 +80,7 @@ Ejercicios de conocimiento basico RHEL
      #pvcreate /dev/vdb1
      #vgcreate vg-opencom -s 8M /dev/vdb1
      #lvcreate /dev/vg-opencom -n lvshare -l 50
+     #mkfs.ext4 /dev/vg-opencom/lvshare
      
      ![hackaton_13](https://user-images.githubusercontent.com/40834361/44064040-c8c9098a-9f28-11e8-9d32-9bc015f8155b.png)
      
