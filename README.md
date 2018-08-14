@@ -1,6 +1,8 @@
 # Hackaton-RHEL-OpenCommunity
 Ejercicios de conocimiento basico RHEL
 
+**NOTA: el que las capturas de pantalla que muestran una fecha posterior a la de la sesión se debe a que la documentación se hizo después. Lo mismo aplica a los ejercicios que fueron completados fuera de tiempo. Los ejercicios que se completaron durante la sesión son: 1,2,3,4,5,6,7,8,9,10,11,12,13,18,23,24 y 26. Los demás fueron resueltos en días posteriores.**
+
 * Cambiar el nombre de host a myhost.opencommunity.org 
 
      #hostnamectl set-hostname myhostacecinxs.opencommunity.org
@@ -13,30 +15,39 @@ Ejercicios de conocimiento basico RHEL
      
      #nmcli connection up eth0
      
+     ![hackaton_1](https://user-images.githubusercontent.com/40834361/44108447-0d1ba6dc-9fc0-11e8-9d65-1c979eafa7d3.png)
+     
      
 * Descargue una Imagen (imagen.iso) y móntelo automáticamente bajo /media/cdrom y que surten efecto automáticamente en el arranque-inicio. 
 
      Se agrega el iso como device CDROM a la máquina virtual
      
-     En este caso, la carpeta en la que vamos a montar se llama "iso"
+     ![hackaton_4a](https://user-images.githubusercontent.com/40834361/44108932-67afd91e-9fc1-11e8-9303-0b72bba49c68.png)
      
-     #mkdir /mnt/iso
+     En este caso, la carpeta en la que vamos a montar se encuentra en /mnt/cdrom     
+     
+     #mkdir /mnt/cdrom
      
      #echo "/dev/sr0 /mnt/iso iso9660 ro,nosuid,nodev,relatime 0 0" > /etc/fstab
      
      #cat /mnt/iso/media.repo >> /etc/yum.repos.d/local.repo
      
+     ![hackaton_4e](https://user-images.githubusercontent.com/40834361/44108936-67f852fc-9fc1-11e8-9596-2bcad3fd5970.png)
+     
+     ![hackaton_4f](https://user-images.githubusercontent.com/40834361/44108937-6816e7d0-9fc1-11e8-8392-7e0af6cfd07f.png)
+     
  * Cree dos usuarios: OpenCommunity con uid / gid igual a 8000, contraseña: password, buenestudiante con un uid / gid igual a  3333, contraseña: biendificil  y malestudiante con uid / gid igual a 6666, contraseña: refacilita. 
  
- #useradd opencommunity -u 8000 -p password
- #useradd buenestudiante -u 3333 -p biendificil
- #useradd malestudiante -u 6666 -p refacilita
+    #useradd opencommunity -u 8000 -p password
+    #useradd buenestudiante -u 3333 -p biendificil
+    #useradd malestudiante -u 6666 -p refacilita
  
+    ![hackaton_5a](https://user-images.githubusercontent.com/40834361/44109537-ec401418-9fc2-11e8-886d-5efa3e2f4562.png)
  
  * Haga que la validez de la cuenta de malestudiante se bloque en un mes.
  
-     #chage -M 30 malestudiante
- 
+     ![hackaton_5b](https://user-images.githubusercontent.com/40834361/44109709-53bec256-9fc3-11e8-8681-f012b61d7c50.png)
+     
  * Permita que buenestudiante (y solo buenestudiante) tenga acceso completo al directorio de inicio (home) de OpenCommunity.
      
      #setfacl -m u:buenestudiante:rwx /home/opencommunity/
