@@ -1,4 +1,4 @@
-# Hackaton-RHEL-OpenCommunity
+# Hackaton-RHEL-OpenCommunity: Equipo Lxs_a_cecinxs
 Ejercicios de conocimiento basico RHEL
 
 **NOTA: el que las capturas de pantalla que muestran una fecha posterior a la de la sesión se debe a que la documentación se hizo después. Lo mismo aplica a los ejercicios que fueron completados fuera de tiempo. Los ejercicios que se completaron durante la sesión son: 1,2,3,4,5,6,7,8,9,10,11,12,13,18,23,24 y 26. Los demás fueron resueltos en días posteriores.**
