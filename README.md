@@ -164,6 +164,16 @@ Ejercicios de conocimiento basico RHEL
 
 * 25: Agregar una nueva tarjeta de red y configurar teaming/bonding
 
+    ![hackaton_25a](https://user-images.githubusercontent.com/40834361/44178850-cb007980-a0b9-11e8-84dd-51b120ba4666.png)
+    
+    ![hackaton_25b](https://user-images.githubusercontent.com/40834361/44178851-cb991000-a0b9-11e8-850b-c39048a2d58a.png)
+    
+    ![hackaton_25c](https://user-images.githubusercontent.com/40834361/44178852-cb991000-a0b9-11e8-8592-57d7373ccd1b.png)
+       
+    
+    **#ip a**
+    
+    ![hackaton_25e](https://user-images.githubusercontent.com/40834361/44178854-cb991000-a0b9-11e8-9e58-7aead6020a96.png)
 
 
 * 26: Configurar autenticación de usuarios usando LDAP y Kerberos
