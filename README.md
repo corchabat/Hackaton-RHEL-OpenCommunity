@@ -116,8 +116,10 @@ Ejercicios de conocimiento basico RHEL
     ![hackaton_16b](https://user-images.githubusercontent.com/40834361/44172859-fd9f7780-a0a3-11e8-8465-1f84593b40d2.png)
 
 * 17: Asigne los mismos contextos de SELinux utilizados por los directorios de inicio, al directorio /xfs permanentemente.
-
-
+    
+    ![hackaton_17a](https://user-images.githubusercontent.com/40834361/44536605-7913b100-a6c2-11e8-83ea-6b14853bef06.png)
+    
+    ![hackaton_17b](https://user-images.githubusercontent.com/40834361/44536607-7913b100-a6c2-11e8-911d-4e5428fbcff2.png)
 
 * 18: Escriba un script Bash llamado virusrompemaquinas.sh en el directorio /root que crea 40 archivos de 2MB cada uno con el comando fallocate en el directorio montado /xfs. Cada archivo tiene un nombre como sigue: .fileOpenC_N donde N es un número del 1 al 40.
     
@@ -139,10 +141,18 @@ Ejercicios de conocimiento basico RHEL
     
 * 20: Cree un volumen lógico de 200 MB llamado lv_swap2 y agréguelo permanentemente al espacio de intercambio actual.
     
+    ![hackaton_20a](https://user-images.githubusercontent.com/40834361/44495927-98b1c780-a637-11e8-941a-016c2942ac8f.png)
+    
+    ![hackaton_20b](https://user-images.githubusercontent.com/40834361/44495928-98b1c780-a637-11e8-86e8-6236b3704512.png)
+    
+    ![hackaton_20c](https://user-images.githubusercontent.com/40834361/44495929-98b1c780-a637-11e8-8233-e8309ac4089d.png)
     
     
 * 21: Cree una partición swap 2G que entre en vigor automáticamente al inicio y al inicio, y no debería afectar la partición de intercambio original.
 
+    ![hackaton_21a](https://user-images.githubusercontent.com/40834361/44235566-9b13ad80-a16f-11e8-97d3-e7c3e5a555d3.png)
+    
+    ![hackaton_21b](https://user-images.githubusercontent.com/40834361/44235567-9b13ad80-a16f-11e8-8fcf-8679b727d02c.png)
 
 * 22: Cree una tarea cron ejecutándose como OpenCommunity, comenzando a las 8PM todos los días y escribiendo un informe sobre el consumo diario de recursos del sistema en el archivo /var/log/loquehacemos.log.
 
@@ -160,7 +170,7 @@ Ejercicios de conocimiento basico RHEL
 
 * 24: Crear un archivo de configuración de repositorio en Yum, apuntando a http://server.example.com/pub/centos7/repo/
 
-
+    ![hackaton_24](https://user-images.githubusercontent.com/40834361/44496326-a1a39880-a639-11e8-82e6-78ab0c58a155.png)
 
 * 25: Agregar una nueva tarjeta de red y configurar teaming/bonding
 
